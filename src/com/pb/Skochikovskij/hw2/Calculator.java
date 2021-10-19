@@ -32,7 +32,8 @@ public class Calculator {
                     System.out.print("На нолики делить низя");
                 } else {
                     System.out.print("Result is: " + (operand1 / operand2));
-                    break;}
+                    break;
+                }
                     default:
                         System.out.print("Шановний, а то точно операція шо ти ото понаписував?");
 
