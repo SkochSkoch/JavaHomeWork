@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class test {
 
 static  char[] toMass (String makePhrase) {
-    char[] makeMass = makePhrase.toCharArray();
-    return makeMass;
+    /*char[] makeMass*/ return makePhrase.toCharArray();
+    //return makeMass;
     }
 
 

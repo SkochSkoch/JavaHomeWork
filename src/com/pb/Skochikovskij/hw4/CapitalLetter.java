@@ -6,9 +6,8 @@ import java.util.Scanner;
 public class CapitalLetter {
 
     static  char[] toMass (String makePhrase) {
-        char[] makeMass = makePhrase.toCharArray();
-        return makeMass;
-    }
+        return makePhrase.toCharArray();
+         }
 
 
     public static void main (String[]args){
