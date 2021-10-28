@@ -1,6 +1,7 @@
 package com.pb.Skochikovskij.hw4;
 
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class CapitalLetter {
