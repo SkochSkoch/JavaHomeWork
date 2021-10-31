@@ -20,7 +20,6 @@ public class Library {
         Reader reader4 = new Reader("Владимир ",7,"Массовые обряды на воде, ","Около 988",
                 "9379992");
 
-
         System.out.println(book1.getInfo());
         System.out.println(book2.getInfo());
         System.out.println(book3.getInfo());
@@ -30,7 +29,8 @@ public class Library {
         System.out.println(reader3.getReaderInfo());
         System.out.println(reader4.getReaderInfo());
 
-        reader1.takeBook(book1.getBookName(), book3.getBookName());//("Лабиринт Отражений","Трудно быть богом");
+
+        reader1.takeBook(book1.getBookName(), book3.getBookName());
         reader2.takeBook(3);
         reader3.takeBook(book1.getInfo(), book3.getInfo(), book4.getInfo());
         reader4.returnBook(book4.getBookName(), book2.getBookName());
@@ -46,17 +46,3 @@ public class Library {
 
 
 
-  /*book1.setBookName("Лабиринт отражений");
-          book2.setBookName("Трудно быть богом");
-          book3.setBookName("Алмазный меч деревянный меч");
-          book4.setBookName("Колыбельная");
-
-          book1.setAuthor("Сергей Лукьяненко");
-          book2.setAuthor("Аркадий и Борис Стругацкие");
-          book3.setAuthor("Ник Перумов");
-          book4.setAuthor("Чак Паланик");
-
-          book1.setYear(1997);
-          book2.setYear(1963);
-          book3.setYear(1998);
-          book4.setYear(2002); */

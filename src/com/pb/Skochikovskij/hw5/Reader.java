@@ -45,23 +45,39 @@ public Reader (String readerFIO,int readerID,String readerFaculty,String readerB
     this.readerPhone = readerPhone;
 }
 
+    /**
+     *
+     * @return Получаем полную информацию о пользователе
+     */
     public String getReaderInfo () {
         return "[Читатель: " + readerFIO + " ID читателя: " + readerID + " факультет: " +readerFaculty +  " дата рождения: " + readerBirthdate + " Телефон для связи: " +  readerPhone + "]";
     }
 
+    /**
+     *
+     * @param bookCount принимаем число и пишем, что вот столько книг взял наш юзер
+     */
     public void takeBook(int bookCount) {
-                System.out.println("Читатель: " + readerFIO + " взял следующее количество книг : " + bookCount ); // Пробуем выводить клиента + количество книг
+                System.out.println("Читатель: " + readerFIO + " взял следующее количество книг : " + bookCount );
     }
 
+    /**
+     *
+     * @param bookName здесь через условный for each берём имя юзера + названия книг, которые он брал
+     */
     public void takeBook(String... bookName) {
-        System.out.println("Читатель: " + readerFIO + " взял cледующие книги: "); // Пробуем выводить клиента + количество книг
+        System.out.println("Читатель: " + readerFIO + " взял cледующие книги: ");
                 for (String book :  bookName) {
                     System.out.println(book);
                 }
     }
 
+    /**
+     *
+     * @param books я не уверен как это работает, нужно передать объект но ..массив строк ?? вроде работает
+     */
     public  void takeBook(String[]... books) {
-        System.out.println("Читатель: " + readerFIO + " взял cледующие книги: "); // Пробуем выводить клиента + количество книг
+        System.out.println("Читатель: " + readerFIO + " взял cледующие книги: ");
         for (String[] bookInfo : books) {
             System.out.println(Arrays.toString(bookInfo));
         }
