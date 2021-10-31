@@ -83,6 +83,13 @@ public Reader (String readerFIO,int readerID,String readerFaculty,String readerB
         }
     }
 
+    public  void takeBook(Book... books) {
+        System.out.println("Читатель: " + readerFIO + " взял cледующие книги: ");
+        for (Book bookInfo : books) {
+            System.out.println(bookInfo.getInfo());
+        }
+    }
+
 
     public void returnBook(int bookCount) {
         System.out.println("Читатель: " + readerFIO + " сдал следующее количество книг : " + bookCount ); // Пробуем выводить клиента + количество книг
@@ -99,6 +106,13 @@ public Reader (String readerFIO,int readerID,String readerFaculty,String readerB
         System.out.println("Читатель: " + readerFIO + " сдал cледующие книги: "); // Пробуем выводить клиента + количество книг
         for (String[] bookInfo : books) {
             System.out.println(Arrays.toString(bookInfo));
+        }
+    }
+
+    public  void returnBook(Book... books) {
+        System.out.println("Читатель: " + readerFIO + " сдал cледующие книги: "); // Пробуем выводить клиента + количество книг
+        for (Book bookInfo : books) {
+            System.out.println(bookInfo.getInfo());
         }
     }
 
