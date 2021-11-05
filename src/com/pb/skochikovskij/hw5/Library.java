@@ -1,4 +1,4 @@
-package com.pb.Skochikovskij.hw5;
+package com.pb.skochikovskij.hw5;
 /*Класс Library используется как демонстрация работы классов Book и Reader.
 Имеет метод main() в котором создается массивы объектов Book и Reader, по 3 или более элементов в каждом.
 Выполняются такие действия:

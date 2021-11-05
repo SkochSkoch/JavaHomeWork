@@ -1,4 +1,4 @@
-package com.pb.Skochikovskij.test;
+package com.pb.skochikovskij.test;
 import java.util.Scanner;
 
 public class test {

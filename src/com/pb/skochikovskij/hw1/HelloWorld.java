@@ -1,4 +1,4 @@
-package com.pb.Skochikovskij.hw1;
+package com.pb.skochikovskij.hw1;
 
 public class HelloWorld {
     public static void main (String [] args) {

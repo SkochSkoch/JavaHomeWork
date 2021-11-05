@@ -1,4 +1,4 @@
-package com.pb.Skochikovskij.hw3;
+package com.pb.skochikovskij.hw3;
 import java.util.Scanner;
 import java.util.Random;
 /*1. Написать программу игру “Bingo”.

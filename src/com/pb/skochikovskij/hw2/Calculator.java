@@ -1,4 +1,4 @@
-package com.pb.Skochikovskij.hw2;
+package com.pb.skochikovskij.hw2;
 
 import java.util.Scanner;
 

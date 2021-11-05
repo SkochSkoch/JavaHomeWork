@@ -1,4 +1,4 @@
-package com.pb.Skochikovskij.hw5;
+package com.pb.skochikovskij.hw5;
 
 import java.util.Arrays;
 
