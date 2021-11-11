@@ -1,5 +1,7 @@
 package com.pb.skochikovskij.hw6;
 
+import java.util.Objects;
+
 public class Panda extends Animal {
     private String nameOfPanda;
     private int hugsLastYear;
@@ -32,18 +34,24 @@ public class Panda extends Animal {
     }
 
     @Override
-    public int hashCode() {
-        return super.hashCode();
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Panda panda = (Panda) o;
+        return hugsLastYear == panda.hugsLastYear && Objects.equals(nameOfPanda, panda.nameOfPanda);
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public int hashCode() {
+        return Objects.hash(nameOfPanda, hugsLastYear);
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Panda{" +
+                "nameOfPanda='" + nameOfPanda + '\'' +
+                ", hugsLastYear=" + hugsLastYear +
+                '}';
     }
 
     public String getNameOfPanda() {

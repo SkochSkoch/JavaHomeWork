@@ -1,5 +1,7 @@
 package com.pb.skochikovskij.hw6;
 
+import java.util.Objects;
+
 public class Seal extends Animal {
 
     private String nameOfSeal;
@@ -39,19 +41,26 @@ public class Seal extends Animal {
         super(food, location);
     }
 
+
     @Override
-    public int hashCode() {
-        return super.hashCode();
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Seal seal = (Seal) o;
+        return kgWeight == seal.kgWeight && Objects.equals(nameOfSeal, seal.nameOfSeal);
     }
 
     @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public int hashCode() {
+        return Objects.hash(nameOfSeal, kgWeight);
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Seal{" +
+                "nameOfSeal='" + nameOfSeal + '\'' +
+                ", kgWeight=" + kgWeight +
+                '}';
     }
 
     public String getNameOfSeal() {
